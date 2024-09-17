@@ -1,5 +1,5 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query"
-import { createGoalCompleted } from "../../http"
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { createGoalCompleted } from '../../http'
 
 export function useCreateGoalCompleted() {
   const queryClient = useQueryClient()
@@ -9,11 +9,11 @@ export function useCreateGoalCompleted() {
 
     onSuccess: () => {
       queryClient.invalidateQueries({
-        queryKey: ['pending-goals']
+        queryKey: ['pending-goals'],
       })
       queryClient.invalidateQueries({
-        queryKey: ['summary']
+        queryKey: ['summary'],
       })
-    }
+    },
   })
 }

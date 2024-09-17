@@ -10,9 +10,10 @@ export function Progress(props: ProgressPrimitive.ProgressProps) {
   )
 }
 
-export function ProgressIndicator(
-  { className, ...props }: ProgressPrimitive.ProgressIndicatorProps
-) {
+export function ProgressIndicator({
+  className,
+  ...props
+}: ProgressPrimitive.ProgressIndicatorProps) {
   return (
     <ProgressPrimitive.Indicator
       {...props}

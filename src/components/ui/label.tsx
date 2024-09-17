@@ -5,7 +5,7 @@ export function Label(props: ComponentProps<'label'>) {
   return (
     <label
       htmlFor={props.htmlFor}
-      aria-label='label'
+      aria-label="label"
       {...props}
       className={twMerge(
         'font-medium text-sm tracking-tight leading-normal',

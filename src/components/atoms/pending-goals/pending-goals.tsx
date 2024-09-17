@@ -1,9 +1,7 @@
-import { OutlineButton } from "@/components/ui/outline-button";
-import { useCreateGoalCompleted } from "@/hooks";
-import type { PendingGoalsResponse } from "@/http";
-import { Plus } from "lucide-react";
-
-
+import { OutlineButton } from '@/components/ui/outline-button'
+import { useCreateGoalCompleted } from '@/hooks'
+import type { PendingGoalsResponse } from '@/http'
+import { Plus } from 'lucide-react'
 
 export interface PendingGoalsProps {
   pendingGoals: PendingGoalsResponse | undefined

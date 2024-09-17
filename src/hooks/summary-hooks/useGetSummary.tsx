@@ -1,8 +1,8 @@
 'use client'
 
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from '@tanstack/react-query'
 
-import { SummaryService, type SummaryResponse } from "../../http";
+import { type SummaryResponse, SummaryService } from '../../http'
 
 export function useGetSummary() {
   const oneMinute = 1000 * 60

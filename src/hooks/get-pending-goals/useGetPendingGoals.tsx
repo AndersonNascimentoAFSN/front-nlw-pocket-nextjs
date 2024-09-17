@@ -1,6 +1,6 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from '@tanstack/react-query'
 
-import { getPendingGoals, type PendingGoalsResponse } from "../../http";
+import { type PendingGoalsResponse, getPendingGoals } from '../../http'
 
 export function useGetPendingGoals() {
   const oneMinute = 1000 * 60

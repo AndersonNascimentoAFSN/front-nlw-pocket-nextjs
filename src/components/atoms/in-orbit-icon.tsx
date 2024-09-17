@@ -1,6 +1,6 @@
-import type { ComponentProps } from "react"
+import type { ComponentProps } from 'react'
 
-export type InOrbitIconProps = ComponentProps<"svg">
+export type InOrbitIconProps = ComponentProps<'svg'>
 
 export function InOrbitIcon(props: InOrbitIconProps) {
   return (
