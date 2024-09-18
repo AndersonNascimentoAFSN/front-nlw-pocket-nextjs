@@ -26,7 +26,7 @@ export function SummaryService(): Promise<SummaryResponse> {
   let cacheHeader: string | null = null
 
   const response: Promise<SummaryResponse> = fetch(
-    `${env.NEXT_PUBLIC_API_URL}/week-summary`,
+    `${env.API_URL}/week-summary`,
     {
       next: {
         revalidate: oneMinute * 5,

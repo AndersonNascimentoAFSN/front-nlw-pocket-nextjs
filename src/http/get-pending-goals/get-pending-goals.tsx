@@ -13,7 +13,7 @@ export function getPendingGoals(): Promise<PendingGoalsResponse> {
   const oneMinute = 60 * 1000
 
   const response: Promise<PendingGoalsResponse> = fetch(
-    `${env.NEXT_PUBLIC_API_URL}/pending-goals`,
+    `${env.API_URL}/pending-goals`,
     {
       next: {
         revalidate: oneMinute * 5,

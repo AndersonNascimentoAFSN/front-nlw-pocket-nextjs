@@ -21,7 +21,7 @@ export function createGoal({
   desiredWeeklyFrequency,
 }: CreateGoalRequest): Promise<CreateGoalResponse> {
   const response: Promise<CreateGoalResponse> = fetch(
-    `${env.NEXT_PUBLIC_API_URL}/goals`,
+    `${env.API_URL}/goals`,
     {
       method: 'POST',
       headers: {

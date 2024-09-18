@@ -14,7 +14,7 @@ export function createGoalCompleted(
   goalId: string
 ): Promise<CreateGoalCompletedResponse> {
   const response: Promise<CreateGoalCompletedResponse> = fetch(
-    `${env.NEXT_PUBLIC_API_URL}/goal-completions`,
+    `${env.API_URL}/goal-completions`,
     {
       method: 'POST',
       headers: {

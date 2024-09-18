@@ -14,7 +14,7 @@ export function undoGoalCompleted(
   goalCompletionId: string
 ): Promise<UndoGoalCompletedResponse> {
   const response: Promise<UndoGoalCompletedResponse> = fetch(
-    `${env.NEXT_PUBLIC_API_URL}/undo-goal-completions`,
+    `${env.API_URL}/undo-goal-completions`,
     {
       method: 'POST',
       headers: {
