@@ -1,5 +1,6 @@
 'use client'
 
+import { createGoalAction } from '@/actions/createGoalAction'
 import { Button } from '@/components/ui/button'
 import {
   Dialog,
@@ -30,8 +31,6 @@ const createGoalSchema = z.object({
 type CreateGoalFormData = z.infer<typeof createGoalSchema>
 
 export function CreateGoal() {
-  const { mutateAsync: createGoal } = useCreateGoal()
-
   const { registerGoalModalOpen, setRegisterGoalModalOpen } = useRegisterGoal()
 
   const {
@@ -48,8 +47,8 @@ export function CreateGoal() {
     },
   })
 
-  function handleCreateGoal(data: CreateGoalFormData) {
-    createGoal(data).then(() => {
+  async function handleCreateGoal(data: CreateGoalFormData) {
+    createGoalAction(data).then(() => {
       reset()
     })
   }

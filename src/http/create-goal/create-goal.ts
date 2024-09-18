@@ -15,6 +15,7 @@ export interface CreateGoalResponse {
       }
     | undefined
 }
+
 export function createGoal({
   title,
   desiredWeeklyFrequency,
@@ -31,6 +32,12 @@ export function createGoal({
   )
     .then(response => response.json())
     .then((data: CreateGoalResponse) => data)
+    .catch(err => {
+      console.error('error', err.message)
+      return Promise.resolve({
+        goal: undefined,
+      })
+    })
 
   return response
 }
