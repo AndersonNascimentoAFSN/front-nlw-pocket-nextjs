@@ -20,16 +20,13 @@ export function createGoal({
   title,
   desiredWeeklyFrequency,
 }: CreateGoalRequest): Promise<CreateGoalResponse> {
-  const response: Promise<CreateGoalResponse> = fetch(
-    `${env.API_URL}/goals`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ title, desiredWeeklyFrequency }),
-    }
-  )
+  const response: Promise<CreateGoalResponse> = fetch(`${env.API_URL}/goals`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ title, desiredWeeklyFrequency }),
+  })
     .then(response => response.json())
     .then((data: CreateGoalResponse) => data)
     .catch(err => {
