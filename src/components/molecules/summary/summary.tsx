@@ -1,17 +1,17 @@
 import { InOrbitIcon } from '@/components/atoms/in-orbit-icon'
 import { PendingGoals } from '@/components/atoms/pending-goals'
 import { RegisterGoalButton } from '@/components/atoms/register-goal-button'
-import { Button } from '@/components/ui/button'
+import { UndoGoalCompletedButton } from '@/components/atoms/undo-goal-completed-button'
 import { Progress, ProgressIndicator } from '@/components/ui/progress-bar'
 import { Separator } from '@/components/ui/separator'
-import type { PendingGoalsResponse, SummaryResponse } from '@/http'
+import type { PendingGoalsResponse, SummaryType } from '@/http'
 import dayjs from 'dayjs'
 import ptBR from 'dayjs/locale/pt-br'
 import { CheckCircle2 } from 'lucide-react'
 dayjs.locale(ptBR)
 
 interface SummaryProps {
-  summary: SummaryResponse
+  summary: SummaryType
   pendingGoals: PendingGoalsResponse | undefined
 }
 
@@ -87,9 +87,7 @@ export function Summary({ summary, pendingGoals }: SummaryProps) {
                           <span className="text-zinc-100">{time}h</span>
                         </span>
 
-                        <Button variant="link" size="xs">
-                          Desfazer
-                        </Button>
+                        <UndoGoalCompletedButton goalId={goal.id} />
                       </li>
                     )
                   })}

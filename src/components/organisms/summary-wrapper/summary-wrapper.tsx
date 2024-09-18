@@ -1,18 +1,15 @@
-'use client'
-
 import { EmptyGoals } from '@/components/atoms/empty-goals'
 import { Summary } from '@/components/molecules/summary'
-import { useGetPendingGoals, useGetSummary } from '@/hooks'
+import { SummaryService, getPendingGoals } from '@/http'
 
-export function SummaryWrapper() {
-  const { data: summary } = useGetSummary()
-
-  const { data: pendingGoals } = useGetPendingGoals()
+export async function SummaryWrapper() {
+  const summary = await SummaryService()
+  const pendingGoals = await getPendingGoals()
 
   return (
     <>
-      {summary && summary?.total > 0 ? (
-        <Summary summary={summary} pendingGoals={pendingGoals} />
+      {summary && summary.summary?.total > 0 ? (
+        <Summary summary={summary?.summary} pendingGoals={pendingGoals} />
       ) : (
         <EmptyGoals />
       )}

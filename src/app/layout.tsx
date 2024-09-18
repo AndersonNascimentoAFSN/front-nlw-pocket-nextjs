@@ -18,7 +18,11 @@ export const metadata: Metadata = {
   title: 'In Orbit',
   description: 'In Orbit App',
   icons: {
-    icon: '/logo-in-orbit.svg', // /public path
+    shortcut: {
+      url: '/logo-in-orbit.svg',
+      type: 'image/svg+xml',
+      sizes: '192x192',
+    },
   },
 }
 
@@ -29,7 +33,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/logo-in-orbit.svg" sizes="any" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
       >
