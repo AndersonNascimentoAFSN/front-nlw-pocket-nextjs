@@ -1,4 +1,4 @@
-import { IPendingGoals } from '@/@types/pendingGoals'
+import type { IPendingGoals } from '@/@types/pendingGoals'
 import { env } from '@/env'
 
 export interface PendingGoalsResponse {

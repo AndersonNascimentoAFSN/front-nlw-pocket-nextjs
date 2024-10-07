@@ -26,7 +26,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "commitlint.config.ts"
+    "commitlint.config.ts",
+    "vitest.config.mts",
+    "src/setup-test.ts"
   ],
   "exclude": ["node_modules"]
 }
