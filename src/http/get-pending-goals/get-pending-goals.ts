@@ -1,12 +1,8 @@
+import { IPendingGoals } from '@/@types/pendingGoals'
 import { env } from '@/env'
 
 export interface PendingGoalsResponse {
-  pendingGoals: {
-    id: string
-    title: string
-    desiredWeeklyFrequency: number
-    completionCount: number
-  }[]
+  pendingGoals: IPendingGoals[]
 }
 
 export function getPendingGoals(): Promise<PendingGoalsResponse> {
