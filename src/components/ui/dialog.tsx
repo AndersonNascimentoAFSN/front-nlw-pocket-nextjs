@@ -1,5 +1,5 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog'
-import { type LegacyRef, forwardRef } from 'react'
+import { type Ref, forwardRef } from 'react'
 
 export function Dialog(props: DialogPrimitive.DialogProps) {
   return <DialogPrimitive.Dialog {...props} />
@@ -20,7 +20,7 @@ export function DialogPortal(props: DialogPrimitive.DialogPortalProps) {
 export const DialogOverlay = forwardRef(
   (
     props: DialogPrimitive.DialogOverlayProps,
-    ref: LegacyRef<HTMLDivElement> | undefined
+    ref: Ref<HTMLDivElement> | undefined
   ) => {
     return (
       <DialogPrimitive.DialogOverlay
