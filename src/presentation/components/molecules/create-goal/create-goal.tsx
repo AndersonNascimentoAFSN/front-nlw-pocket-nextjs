@@ -1,23 +1,23 @@
 'use client'
 
-import { createGoalAction } from '@/actions/createGoalAction'
-import { Button } from '@/components/ui/button'
+import { createGoalAction } from '@/presentation/actions/createGoalAction'
+import { Button } from '@/presentation/components/ui/button'
 import {
   Dialog,
   DialogClose,
   DialogContent,
   DialogDescription,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+} from '@/presentation/components/ui/dialog'
+import { Input } from '@/presentation/components/ui/input'
+import { Label } from '@/presentation/components/ui/label'
 import {
   RadioGroup,
   RadioGroupIndicator,
   RadioGroupItem,
-} from '@/components/ui/radio-group'
+} from '@/presentation/components/ui/radio-group'
 import { useCreateGoal } from '@/hooks'
-import { useRegisterGoal } from '@/store'
+import { useRegisterGoal } from '@/presentation/store'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { X } from 'lucide-react'
 import { Controller, useForm } from 'react-hook-form'

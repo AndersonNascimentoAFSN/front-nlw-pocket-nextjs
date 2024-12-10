@@ -1,5 +1,5 @@
-import { EmptyGoals } from '@/components/atoms/empty-goals'
-import { Summary } from '@/components/molecules/summary'
+import { EmptyGoals } from '@/presentation/components/atoms/empty-goals'
+import { Summary } from '@/presentation/components/molecules/summary'
 import { SummaryService, getPendingGoals } from '@/http'
 
 export async function SummaryWrapper() {

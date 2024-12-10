@@ -1,7 +1,7 @@
 'use client'
 
-import { createCompletedAction } from '@/actions/createCompletedAction'
-import { OutlineButton } from '@/components/ui/outline-button'
+import { createCompletedAction } from '@/presentation/actions/createCompletedAction'
+import { OutlineButton } from '@/presentation/components/ui/outline-button'
 import type { PendingGoalsResponse } from '@/http'
 import { Plus } from 'lucide-react'
 

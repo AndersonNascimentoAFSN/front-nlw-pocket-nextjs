@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import { useRegisterGoal } from '@/store'
+import { Button } from '@/presentation/components/ui/button'
+import { useRegisterGoal } from '@/presentation/store'
 import { Plus } from 'lucide-react'
 
 export function RegisterGoalButton() {

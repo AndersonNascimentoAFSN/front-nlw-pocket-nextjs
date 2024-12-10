@@ -1,4 +1,4 @@
-import { env } from '@/env'
+import { env } from '@/presentation/env'
 
 export interface PendingGoalsResponse {
   pendingGoals: {

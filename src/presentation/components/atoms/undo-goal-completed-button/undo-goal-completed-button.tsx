@@ -1,7 +1,7 @@
 'use client'
 
-import { undoGoalCompletedAction } from '@/actions/undoGoalCompletedAction'
-import { Button } from '@/components/ui/button'
+import { undoGoalCompletedAction } from '@/presentation/actions/undoGoalCompletedAction'
+import { Button } from '@/presentation/components/ui/button'
 import React from 'react'
 
 export interface UndoGoalCompletedButtonProps {

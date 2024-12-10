@@ -1,13 +1,13 @@
-import { env } from '@/env'
+import { env } from '@/presentation/env'
 
 export interface UndoGoalCompletedResponse {
   goalCompletion:
-    | {
-        id: string
-        createdAt: Date
-        goalId: string
-      }
-    | undefined
+  | {
+    id: string
+    createdAt: Date
+    goalId: string
+  }
+  | undefined
 }
 
 export function undoGoalCompleted(
