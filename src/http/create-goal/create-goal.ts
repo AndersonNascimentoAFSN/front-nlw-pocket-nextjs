@@ -7,13 +7,13 @@ export interface CreateGoalRequest {
 
 export interface CreateGoalResponse {
   goal:
-  | {
-    id: string
-    title: string
-    desiredWeeklyFrequency: number
-    createdAt: Date
-  }
-  | undefined
+    | {
+        id: string
+        title: string
+        desiredWeeklyFrequency: number
+        createdAt: Date
+      }
+    | undefined
 }
 
 export function createGoal({

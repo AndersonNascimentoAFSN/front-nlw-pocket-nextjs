@@ -1,10 +1,13 @@
+import type { PendingGoalsResponse, SummaryType } from '@/http'
 import { InOrbitIcon } from '@/presentation/components/atoms/in-orbit-icon'
 import { PendingGoals } from '@/presentation/components/atoms/pending-goals'
 import { RegisterGoalButton } from '@/presentation/components/atoms/register-goal-button'
 import { UndoGoalCompletedButton } from '@/presentation/components/atoms/undo-goal-completed-button'
-import { Progress, ProgressIndicator } from '@/presentation/components/ui/progress-bar'
+import {
+  Progress,
+  ProgressIndicator,
+} from '@/presentation/components/ui/progress-bar'
 import { Separator } from '@/presentation/components/ui/separator'
-import type { PendingGoalsResponse, SummaryType } from '@/http'
 import dayjs from 'dayjs'
 import ptBR from 'dayjs/locale/pt-br'
 import { CheckCircle2 } from 'lucide-react'

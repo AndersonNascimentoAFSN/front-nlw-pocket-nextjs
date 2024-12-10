@@ -1,6 +1,6 @@
+import { SummaryService, getPendingGoals } from '@/http'
 import { EmptyGoals } from '@/presentation/components/atoms/empty-goals'
 import { Summary } from '@/presentation/components/molecules/summary'
-import { SummaryService, getPendingGoals } from '@/http'
 
 export async function SummaryWrapper() {
   const summary = await SummaryService()

@@ -1,5 +1,6 @@
 'use client'
 
+import { useCreateGoal } from '@/hooks'
 import { createGoalAction } from '@/presentation/actions/createGoalAction'
 import { Button } from '@/presentation/components/ui/button'
 import {
@@ -16,7 +17,6 @@ import {
   RadioGroupIndicator,
   RadioGroupItem,
 } from '@/presentation/components/ui/radio-group'
-import { useCreateGoal } from '@/hooks'
 import { useRegisterGoal } from '@/presentation/store'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { X } from 'lucide-react'

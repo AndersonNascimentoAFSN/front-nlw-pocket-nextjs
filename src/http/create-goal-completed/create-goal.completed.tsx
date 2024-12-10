@@ -2,12 +2,12 @@ import { env } from '@/presentation/env'
 
 export interface CreateGoalCompletedResponse {
   goalCompletion:
-  | {
-    id: string
-    createdAt: Date
-    goalId: string
-  }
-  | undefined
+    | {
+        id: string
+        createdAt: Date
+        goalId: string
+      }
+    | undefined
 }
 
 export function createGoalCompleted(

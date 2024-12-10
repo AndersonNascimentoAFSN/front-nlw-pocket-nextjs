@@ -1,8 +1,8 @@
 'use client'
 
+import type { PendingGoalsResponse } from '@/http'
 import { createCompletedAction } from '@/presentation/actions/createCompletedAction'
 import { OutlineButton } from '@/presentation/components/ui/outline-button'
-import type { PendingGoalsResponse } from '@/http'
 import { Plus } from 'lucide-react'
 
 export interface PendingGoalsProps {
