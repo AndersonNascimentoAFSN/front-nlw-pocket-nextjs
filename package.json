@@ -10,6 +10,8 @@
     "build:turbo": "turbo build",
     "start": "next start",
     "lint": "npx @biomejs/biome check",
+    "lint:turbo": "turbo lint",
+    "lint:turbo:fix": "turbo lint:fix",
     "lint:fix": "npx @biomejs/biome check --write .",
     "prepare": "husky",
     "check-types": "tsc --noEmit"
