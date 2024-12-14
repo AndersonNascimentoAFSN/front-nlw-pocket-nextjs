@@ -1,12 +1,14 @@
 import { env } from '@/env'
 
+export interface PendingGoal {
+  id: string
+  title: string
+  desiredWeeklyFrequency: number
+  completionCount: number
+}
+
 export interface PendingGoalsResponse {
-  pendingGoals: {
-    id: string
-    title: string
-    desiredWeeklyFrequency: number
-    completionCount: number
-  }[]
+  pendingGoals: PendingGoal[]
 }
 
 export function getPendingGoals(): Promise<PendingGoalsResponse> {

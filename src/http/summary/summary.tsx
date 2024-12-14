@@ -5,7 +5,7 @@ export type GoalsPerDayType = Record<
   Array<{
     id: string
     title: string
-    completedAt: Date
+    completedAt: string // "2024-12-14T21:08:30.656085+00:00"
   }>
 >
 
@@ -17,7 +17,7 @@ export type SummaryType = {
 
 export interface SummaryResponse {
   summary: SummaryType
-  lastUpdate: Date | null
+  lastUpdate: string | null // "2024-12-14T21:08:30.671Z"
   cacheHeader: string | null
 }
 

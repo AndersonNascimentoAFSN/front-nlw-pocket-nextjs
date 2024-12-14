@@ -5,6 +5,10 @@ import { SummaryService, getPendingGoals } from '@/http'
 export async function SummaryWrapper() {
   const summary = await SummaryService()
   const pendingGoals = await getPendingGoals()
+  console.log('pendingGoals', pendingGoals)
+  console.log('summary', summary)
+
+  // const summary = { summary: { completed: 0, total: 0, goalsPerDay: null } }
 
   return (
     <>
